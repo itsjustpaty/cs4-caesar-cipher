@@ -21,21 +21,21 @@
 
         <div class="controls">
             <div class="shift-wrapper">
-                <label for="shiftValue">Shift Amount</label>
-                <input type="number" id="shiftValue" value="3" min="1" max="25">
+                <label for="key">Key</label>
+                <input type="number" id="key" value="3" min="1" max="25">
             </div>
             
             <div class="button-wrapper">
-                <button class="btn btn-encrypt">Encrypt</button>
-                <button class="btn btn-decrypt">Decrypt</button>
+                <button class="btn btn-encrypt" onclick="encrypt()">Encrypt</button>
+                <button class="btn btn-decrypt" onclick="decrypt()">Decrypt</button>
             </div>
         </div>
 
         <div class="input-group">
-            <label for="resultOutput">Result</label>
-            <textarea id="resultOutput" readonly placeholder="The result will appear here..."></textarea>
+            <label for="result">Result</label>
+            <textarea id="result" readonly placeholder="The result will appear here..."></textarea>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
